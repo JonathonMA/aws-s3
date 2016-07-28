@@ -7,26 +7,25 @@ require 'time'
 require 'date'
 require 'open-uri'
 
-$:.unshift(File.dirname(__FILE__))
-require 's3/extensions'
+require 'aws/s3/extensions'
 require_library_or_gem 'builder' unless defined? Builder
 require_library_or_gem 'mime/types', 'mime-types' unless defined? MIME::Types
 
-require 's3/base'
-require 's3/version'
-require 's3/parsing'
-require 's3/acl'
-require 's3/logging'
-require 's3/bittorrent'
-require 's3/service'
-require 's3/owner'
-require 's3/bucket'
-require 's3/object'
-require 's3/error'
-require 's3/exceptions'
-require 's3/connection'
-require 's3/authentication'
-require 's3/response'
+require 'aws/s3/base'
+require 'aws/s3/version'
+require 'aws/s3/parsing'
+require 'aws/s3/acl'
+require 'aws/s3/logging'
+require 'aws/s3/bittorrent'
+require 'aws/s3/service'
+require 'aws/s3/owner'
+require 'aws/s3/bucket'
+require 'aws/s3/object'
+require 'aws/s3/error'
+require 'aws/s3/exceptions'
+require 'aws/s3/connection'
+require 'aws/s3/authentication'
+require 'aws/s3/response'
 
 module AWS
   module S3
